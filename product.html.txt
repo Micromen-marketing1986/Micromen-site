@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BuildSuperfast ERP – Product & Modules</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Detailed product and module overview of BuildSuperfast ERP for construction, infrastructure and real estate companies." />
+  <style>
+    :root {
+      --primary: #0b67a3;
+      --primary-dark: #08476e;
+      --accent: #f9a826;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --bg: #f3f4f6;
+      --white: #ffffff;
+      --border: #e5e7eb;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background: #111827;
+      color: var(--white);
+      padding: 16px 24px;
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: 0.9rem;
+    }
+
+    .logo span:first-child {
+      text-transform: uppercase;
+      font-size: 1.05rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      opacity: 0.9;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 9px 18px;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #111827;
+    }
+
+    .btn-primary:hover {
+      background: #f59e0b;
+    }
+
+    main {
+      padding: 32px 16px 64px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    .hero {
+      margin-bottom: 40px;
+      background: linear-gradient(135deg, #0b67a3, #1f2933);
+      border-radius: 24px;
+      padding: 28px 26px;
+      color: var(--white);
+    }
+
+    .hero h1 {
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      margin: 4px 0;
+      font-size: 0.98rem;
+      color: #e5e7eb;
+    }
+
+    .hero-footer {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.85rem;
+      color: #d1d5db;
+    }
+
+    .hero-footer span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+      background: rgba(15, 23, 42, 0.4);
+    }
+
+    section {
+      margin-bottom: 40px;
+      background: var(--white);
+      border-radius: 18px;
+      padding: 20px 18px;
+      border: 1px solid var(--border);
+    }
+
+    section h2 {
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    section > p {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .module {
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      padding: 14px 14px 12px;
+      background: #f9fafb;
+    }
+
+    .module h3 {
+      font-size: 1rem;
+      margin: 0 0 6px;
+    }
+
+    .module p {
+      margin: 0 0 6px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .module ul {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .module li {
+      margin-bottom: 3px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .tag {
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.2fr);
+      gap: 20px;
+    }
+
+    .bullets ul {
+      padding-left: 18px;
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .bullets li {
+      margin-bottom: 4px;
+    }
+
+    .subheading {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+
+    .highlight-box {
+      border-radius: 14px;
+      border: 1px dashed var(--border);
+      padding: 12px 14px;
+      font-size: 0.9rem;
+      background: #f9fafb;
+      color: var(--muted);
+    }
+
+    .cta-section {
+      text-align: center;
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 22px;
+      padding: 26px 20px;
+      margin-top: 8px;
+    }
+
+    .cta-section h2 {
+      color: #f9fafb;
+      margin-bottom: 10px;
+    }
+
+    .cta-section p {
+      max-width: 640px;
+      margin: 0 auto 16px;
+      font-size: 0.95rem;
+      color: #d1d5db;
+    }
+
+    .cta-btns {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-outline-light {
+      border-radius: 999px;
+      padding: 9px 18px;
+      font-size: 0.9rem;
+      border: 1px solid #e5e7eb;
+      background: transparent;
+      color: #f9fafb;
+      cursor: pointer;
+    }
+
+    .btn-outline-light:hover {
+      background: rgba(249, 250, 251, 0.08);
+    }
+
+    @media (max-width: 960px) {
+      .module-grid {
+        grid-template-columns: 1fr;
+      }
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+      }
+      .hero {
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      <span>BuildSuperfast ERP</span>
+      <span>Product & Modules Overview</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#tender">Tender</a>
+      <a href="#projects">Projects</a>
+      <a href="#finance">Finance</a>
+      <button class="btn btn-primary">Request a Demo</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Best Construction ERP Software for Builders, Developers & Contractors</h1>
+      <p>
+        Discover a complete, cloud-based Construction ERP solution designed to streamline project management,
+        financial control, material tracking, sales, CRM, HRM and site operations.
+      </p>
+      <p>
+        Built with over 40 years of construction industry expertise, BuildSuperfast ERP helps companies deliver projects
+        faster, smarter and more profitably.
+      </p>
+      <div class="hero-footer">
+        <span>40+ years construction domain experience</span>
+        <span>End-to-end lifecycle: land to handover</span>
+        <span>Trusted by builders, developers & contractors</span>
+      </div>
+    </section>
+
+    <!-- ALL-IN-ONE -->
+    <section>
+      <h2>All-in-One Best Construction ERP to Manage Your Entire Project Lifecycle</h2>
+      <p>
+        BuildSuperfast ERP brings all core functions into a single integrated system, helping you reduce delays, avoid
+        cost overruns and improve decision-making.
+      </p>
+
+      <div class="highlight-box">
+        From workflow management and tendering to project execution, billing, HR, accounts and handover, every module
+        is tightly integrated to give you a single source of truth for your construction business.
+      </div>
+    </section>
+
+    <!-- WORKFLOW MANAGEMENT -->
+    <section id="workflow">
+      <h2>Workflow Management</h2>
+      <p>
+        Design approval hierarchies, control access and ensure structured operations across multiple companies and
+        projects.
+      </p>
+
+      <div class="module-grid">
+        <div class="module">
+          <h3>Multi Company & Project Creation</h3>
+          <p>
+            Create and manage multiple companies and projects within a unified system, ensuring centralized control.
+          </p>
+          <ul>
+            <li>Cross-company visibility with controlled access</li>
+            <li>Seamless data flow across departments</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <h3>User Defined Roles & Permissions</h3>
+          <p>
+            Configure granular access permissions to ensure secure, role-based operations.
+          </p>
+          <ul>
+            <li>Permissions by module, screen, action and data level</li>
+            <li>Segregation of duties to prevent misuse</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <h3>Level & Position Hierarchy</h3>
+          <p>
+            Define reporting structures and approval layers aligned with your organization.
+          </p>
+          <ul>
+            <li>Supports complex org hierarchies</li>
+            <li>Ensures regulated workflows and transparent accountability</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <h3>Multi-Level & Value-Based Approvals</h3>
+          <p>
+            Automate approvals across departments with value-based rules and escalation paths.
+          </p>
+          <ul>
+            <li>Multi-level approval matrix</li>
+            <li>Special & high-value approvals with additional checks</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <h3>Global Ready Configuration</h3>
+          <p>Operate seamlessly across regions and entities.</p>
+          <ul>
+            <li>Multi-currency & language setup</li>
+            <li>Ideal for companies in multiple states or countries</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <h3>Alerts, Dashboards & Collaboration</h3>
+          <p>Keep teams aligned in real time.</p>
+          <ul>
+            <li>Automated alerts (Email, SMS, WhatsApp)</li>
+            <li>User-defined quick links & dashboards</li>
+            <li>Built-in chat for internal communication</li>
+            <li>Reminders, announcements & pending work dashboards</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENDER MANAGEMENT -->
+    <section id="tender">
+      <h2>Tender Management</h2>
+      <p>
+        Manage government and private tenders from enquiry to award with complete transparency and control.
+      </p>
+
+      <div class="module-grid">
+        <div class="module">
+          <h3>Tender Dashboards & Analytics</h3>
+          <ul>
+            <li>Visualize tender progress, costs and success ratios</li>
+            <li>Data-driven decision-making in tender processes</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Pre-Enquiry & Follow-Up Tracking</h3>
+          <ul>
+            <li>Track initial interest and communication</li>
+            <li>Ensure no opportunity is missed</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Govt & Private Tender Workflows</h3>
+          <ul>
+            <li>Supports end-to-end workflows for both formats</li>
+            <li>Ensures compliance with documentation and procedures</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Quotation & Budget Preparation</h3>
+          <ul>
+            <li>BOQ-driven quotations with rate analysis tools</li>
+            <li>Evaluate feasibility and profitability</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>EMD, Security & Cost Tracking</h3>
+          <ul>
+            <li>Track tender-related expenses including documents, EMDs & securities</li>
+            <li>Clear visibility into tender investment</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Bid Submission & Work Orders</h3>
+          <ul>
+            <li>Automated bid submission workflows</li>
+            <li>Work order generation upon award</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT MANAGEMENT -->
+    <section id="projects">
+      <h2>Project Management</h2>
+      <p>
+        Gain real-time visibility into budgets, schedules, progress and cost variances across all your projects.
+      </p>
+
+      <div class="module-grid">
+        <div class="module">
+          <h3>Project Dashboard & Analytics</h3>
+          <ul>
+            <li>Monitor budgets, schedules, progress & variances</li>
+            <li>Enable early identification of issues</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>BOQ & Cost Control</h3>
+          <ul>
+            <li>BOQ preparation with comparative rate analysis</li>
+            <li>Better cost control in budgeting & procurement</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Micro & Macro Budgeting</h3>
+          <ul>
+            <li>Plan budgets at consolidated or detailed levels</li>
+            <li>Enhance monitoring and cost tracking</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Project Planning & Scheduling</h3>
+          <ul>
+            <li>Create schedules with activity dependencies & milestones</li>
+            <li>Integrates with advanced scheduling tools</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Progress & WBS/IOW Monitoring</h3>
+          <ul>
+            <li>Track execution against planned WBS and IOW metrics</li>
+            <li>Enable timely corrective actions</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Activity Weightage & Site Logs</h3>
+          <ul>
+            <li>Activity & material weightage for accurate progress measurement</li>
+            <li>Detailed site information logs, rain logs, snags & progress images</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAND DEVELOPMENT -->
+    <section>
+      <h2>Land Development</h2>
+      <p>
+        Manage land banks, acquisitions, approvals, feasibility and JV structures with complete financial visibility.
+      </p>
+
+      <div class="module-grid">
+        <div class="module">
+          <h3>Land Bank Dashboard & Analytics</h3>
+          <ul>
+            <li>Monitor land inventory, acquisition status & financials</li>
+            <li>Support strategic land decisions</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Land Acquisition Workflow</h3>
+          <ul>
+            <li>Manage enquiry, negotiation, documentation & approvals</li>
+            <li>Ensure compliance and transparency</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Google Map Integration</h3>
+          <ul>
+            <li>View land parcels with geo-tagging</li>
+            <li>Better site evaluation and planning</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Amenity & Owner Details</h3>
+          <ul>
+            <li>Maintain detailed owner & amenity records</li>
+            <li>Ensure complete documentation</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>JV & Profit Share Tracking</h3>
+          <ul>
+            <li>Manage joint ventures and profit-sharing terms</li>
+            <li>Automated financial projections</li>
+          </ul>
+        </div>
+        <div class="module">
+          <h3>Approvals, Feasibility & Forecasting</h3>
+          <ul>
+            <li>Approval follow-ups & feasibility checklists</li>
+            <li>Finance forecasting for each land parcel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENDOR & MATERIAL -->
+    <section>
+      <h2>Vendor Management, Procurement & Materials</h2>
+      <p>
+        Strengthen procurement, vendor relationships and material control with analytics and BOQ-linked validations.
+      </p>
+
+      <div class="two-col">
+        <div class="bullets">
+          <div class="subheading">Vendor Management & Procurement</div>
+          <ul>
+            <li>End-to-end vendor cycle from registration to evaluation</li>
+            <li>Vendor dashboards & analytics</li>
+            <li>Vendor registration & master creation</li>
+            <li>Rating & performance analytics</li>
+            <li>RFQ preparation & rate comparison</li>
+            <li>Negotiation support & procurement control</li>
+          </ul>
+
+          <div class="subheading">Material Management</div>
+          <ul>
+            <li>Material dashboard & analytics</li>
+            <li>Central & project store management</li>
+            <li>BOQ-controlled indents & purchases</li>
+            <li>Rejects, returns & short close</li>
+            <li>Stock audit & unit conversions</li>
+            <li>Material-based decision intelligence</li>
+            <li>PO knockoff, amendments & short close</li>
+          </ul>
+        </div>
+        <div class="bullets">
+          <div class="subheading">Work Progress Management</div>
+          <ul>
+            <li>Labour attendance & compliance (PF/ESI, registers, muster)</li>
+            <li>Subcontractor orders & billing</li>
+            <li>Daily M-Book updates with images</li>
+            <li>Reconciliation & consumption analysis</li>
+            <li>Work hire & service order preparation</li>
+            <li>Adhoc advances, retention & security deposits</li>
+          </ul>
+
+          <div class="subheading">Asset Management</div>
+          <ul>
+            <li>Own & hired asset tracking</li>
+            <li>Maintenance schedules & fuel tracking</li>
+            <li>Asset capitalization & disposal</li>
+            <li>Asset transfer, issue & scrap management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRM, SALES & POST SALES -->
+    <section>
+      <h2>Pre-Sales, Marketing, Sales & Post Sales</h2>
+      <p>
+        Manage the entire customer journey from enquiry and digital campaigns to bookings, billing and after-sales
+        service.
+      </p>
+
+      <div class="two-col">
+        <div class="bullets">
+          <div class="subheading">Pre-Sales</div>
+          <ul>
+            <li>Lead management & allocation from multiple channels</li>
+            <li>Call tracking & recording</li>
+            <li>Telephony integration for automated dialing & logging</li>
+            <li>Project schedule linkage for progress billing</li>
+            <li>Customer communication via Email/WhatsApp/SMS</li>
+          </ul>
+
+          <div class="subheading">Marketing & Sales</div>
+          <ul>
+            <li>Unit master & pricing control</li>
+            <li>Digital campaign automation (Email, SMS, Google Ads, Meta, etc.)</li>
+            <li>Channel partner management</li>
+            <li>Booking, blocking & amendments with accurate documentation</li>
+          </ul>
+        </div>
+
+        <div class="bullets">
+          <div class="subheading">Post Sales</div>
+          <ul>
+            <li>Stage billing & payment reminders</li>
+            <li>Demand letter generation & follow-ups</li>
+            <li>Extra work customization & billing</li>
+            <li>Agreements & buyer portal</li>
+            <li>Bill & receipt tracking</li>
+            <li>Buyer portal support & referrals</li>
+          </ul>
+
+          <div class="subheading">Property Management</div>
+          <ul>
+            <li>Unit allotment & leasing (commercial & residential)</li>
+            <li>Maintenance & rental billing</li>
+            <li>Tenant communication & documentation</li>
+            <li>Agreement generation & documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HRM & FINANCE -->
+    <section id="finance">
+      <h2>HRM, Payroll, Financial Accounting & GST</h2>
+      <p>
+        Streamline your people processes and financial accounting with deeply integrated HRM and finance modules.
+      </p>
+
+      <div class="two-col">
+        <div class="bullets">
+          <div class="subheading">HRM & Payroll</div>
+          <ul>
+            <li>Recruitment & onboarding</li>
+            <li>Attendance, leave & permissions with validations</li>
+            <li>Payroll & statutory compliance (PF, ESI, TDS etc.)</li>
+            <li>Loans, advances & travel claims with approvals</li>
+            <li>Mail communications to candidates and employees</li>
+            <li>OD, OT & holiday work tracking</li>
+            <li>Tax regime updates & generations</li>
+          </ul>
+        </div>
+        <div class="bullets">
+          <div class="subheading">Financial Accounting & GST</div>
+          <ul>
+            <li>Integrated accounting workflows linked to material, billing, asset & payroll modules</li>
+            <li>Receivables, payables & ledgers</li>
+            <li>GST, e-invoice & e-way bill generation</li>
+            <li>Bank reconciliation & depreciation</li>
+            <li>Advice, payment & receipt management</li>
+            <li>Kickoff & knockoff updates</li>
+            <li>Cheque printing & PDC tracking</li>
+            <li>Automated tax remittance & bank reconciliation</li>
+            <li>Fixed asset analysis</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DMS & FRONT OFFICE -->
+    <section>
+      <h2>Document Management System (DMS) & Front Office</h2>
+      <p>
+        Digitize documentation, drawings and liaisoning activities with traceable, auditable workflows.
+      </p>
+
+      <div class="two-col">
+        <div class="bullets">
+          <div class="subheading">Document Management System (DMS)</div>
+          <ul>
+            <li>Drawing & revision approvals with version tracking</li>
+            <li>Central document repository for drawings, agreements & documents</li>
+            <li>Version control & approvals to prevent outdated usage</li>
+          </ul>
+        </div>
+        <div class="bullets">
+          <div class="subheading">Front Office & Liaisoning</div>
+          <ul>
+            <li>Inward & outward registers</li>
+            <li>Legal register & case tracking</li>
+            <li>E-stamp register for digital management of stamp papers</li>
+            <li>Legal notices, case types & status tracking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPORTING & CLOUD -->
+    <section>
+      <h2>Advanced Reporting, Integrations & Cloud Platform</h2>
+      <p>
+        Make BuildSuperfast ERP the nerve centre of your construction business with powerful reporting, integrations and
+        a robust cloud architecture.
+      </p>
+
+      <div class="two-col">
+        <div class="bullets">
+          <div class="subheading">Advanced Reporting, Dashboards & Analytics</div>
+          <ul>
+            <li>Over 1,000 analytical MRT reports</li>
+            <li>Over 1,000 grid-based reports with sorting & filters</li>
+            <li>One-click Excel & PDF exports</li>
+            <li>Customizable dashboards for management, projects & finance</li>
+            <li>Trend, variance & predictive analysis</li>
+          </ul>
+
+          <div class="subheading">Bulk Data Import & Smart Data Entry</div>
+          <ul>
+            <li>Excel-based bulk uploads for material, labour & billing</li>
+            <li>Error logs with smart validation</li>
+            <li>Fast data entry for site engineers & office teams</li>
+            <li>Easy migration from legacy systems</li>
+          </ul>
+        </div>
+
+        <div class="bullets">
+          <div class="subheading">Powerful Integrations</div>
+          <ul>
+            <li>Email, WhatsApp, SMS & social platforms</li>
+            <li>Tally & external accounting systems</li>
+            <li>GST portals, e-invoice & e-way bill</li>
+            <li>Vendor portals & client portals</li>
+            <li>IoT devices for project monitoring</li>
+            <li>Third-party software via APIs</li>
+          </ul>
+
+          <div class="subheading">Cloud-Based, Mobile-Ready ERP</div>
+          <ul>
+            <li>Access from office, home or remote construction sites</li>
+            <li>Mobile apps for approvals, site updates, billing & inspections</li>
+            <li>Secure role-based access & detailed audit trails</li>
+            <li>Scalable for multi-company, multi-project enterprises</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WE ARE BEST & CTA -->
+    <section>
+      <h2>Why We Are the Best Construction ERP for Builders & Contractors</h2>
+      <p>
+        BuildSuperfast ERP has been shaped by decades of hands-on experience with real construction and real estate
+        operations.
+      </p>
+
+      <div class="bullets">
+        <ul>
+          <li>40+ years of domain experience in construction operations</li>
+          <li>Industry-proven workflows for real estate & contracting</li>
+          <li>End-to-end modules covering every department</li>
+          <li>Deep functionality unmatched by generic ERPs</li>
+          <li>Quick implementation & user-friendly interface</li>
+          <li>Automation that reduces delays & improves cost control</li>
+          <li>Trusted by leading builders, developers & contractors</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Boost Productivity. Improve Profitability. Deliver Projects On Time.</h2>
+      <p>
+        Experience a smarter way to manage construction projects with a complete ERP system tailored for the construction
+        and real estate industry.
+      </p>
+      <div class="cta-btns">
+        <button class="btn btn-primary">Book a Demo</button>
+        <button class="btn-outline-light">Talk to Our Team</button>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>

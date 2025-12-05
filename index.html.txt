@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BuildSuperfast ERP – Best Construction ERP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BuildSuperfast ERP is a cloud-based Construction ERP for builders, developers and contractors with 40+ years of domain expertise." />
+  <style>
+    :root {
+      --primary: #0b67a3;
+      --primary-dark: #08476e;
+      --accent: #f9a826;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --bg: #f3f4f6;
+      --white: #ffffff;
+      --border: #e5e7eb;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1f2d3d, #0b67a3);
+      color: var(--white);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    .logo span:first-child {
+      text-transform: uppercase;
+      font-size: 1.1rem;
+    }
+
+    .logo span:last-child {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 0.95rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      opacity: 0.9;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 10px 20px;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #111827;
+    }
+
+    .btn-primary:hover {
+      background: #f59e0b;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    main {
+      padding: 32px 16px 64px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 40px;
+      align-items: center;
+      margin-top: 16px;
+      margin-bottom: 56px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(11, 103, 163, 0.08);
+      color: var(--primary-dark);
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .hero-highlight {
+      font-size: 0.95rem;
+      color: #111827;
+      margin-bottom: 20px;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .hero-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-card {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .hero-card-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .kpi-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .kpi {
+      flex: 1 1 120px;
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 0.8rem;
+    }
+
+    .kpi-label {
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .kpi-value {
+      font-weight: 600;
+    }
+
+    .hero-card-footer {
+      border-top: 1px dashed var(--border);
+      padding-top: 8px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 56px;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+    }
+
+    section > p.section-lead {
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 20px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 16px 18px;
+      border: 1px solid var(--border);
+    }
+
+    .feature-card h3 {
+      font-size: 1rem;
+      margin: 0 0 6px;
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+
+    .feature-card ul {
+      padding-left: 18px;
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .feature-card li {
+      margin-bottom: 3px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+      gap: 32px;
+      align-items: start;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+      font-size: 0.85rem;
+    }
+
+    .pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #f9fafb;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .stat-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      margin-bottom: 4px;
+      font-size: 0.8rem;
+    }
+
+    .stat-value {
+      font-weight: 600;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px dashed var(--border);
+      background: #f9fafb;
+    }
+
+    .clients, .testimonials {
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 24px;
+      padding: 24px 20px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr);
+      gap: 24px;
+      align-items: center;
+    }
+
+    .clients h2, .testimonials h2 {
+      color: #f9fafb;
+    }
+
+    .logo-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo-placeholder {
+      border-radius: 999px;
+      border: 1px solid rgba(249, 250, 251, 0.2);
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 20px 16px 32px;
+      background: #111827;
+      color: #9ca3af;
+      font-size: 0.85rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      color: #d1d5db;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 960px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .two-col,
+      .clients,
+      .testimonials {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+      }
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+      .stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      <span>BuildSuperfast ERP</span>
+      <span>Construction & Real Estate ERP</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#mis">MIS & Reports</a>
+      <a href="#cloud">Cloud & Mobile</a>
+      <a href="#why">Why Us</a>
+      <a href="product.html" class="btn btn-outline">Product Details</a>
+      <button class="btn btn-primary">Request a Demo</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="hero-badge">
+          <span>Best ERP for Construction, Infrastructure & Real Estate</span>
+        </div>
+        <h1>Best ERP for Construction, Infrastructure Development and Real Estate Industry</h1>
+        <p class="hero-sub">
+          BuildSuperfast ERP is a fully integrated, cloud-based Construction ERP designed specifically for Builders,
+          Developers, and Contractors. It covers the complete lifecycle of real-estate and infrastructure projects—from
+          land acquisition to handover, and from tendering to financial closure.
+        </p>
+        <p class="hero-highlight">
+          Backed by over 40 years of construction domain expertise, BuildSuperfast ERP delivers exceptional functional
+          depth, operational accuracy, and unmatched user experience.
+        </p>
+        <div class="hero-cta">
+          <button class="btn btn-primary">Schedule a Demo</button>
+          <button class="btn btn-outline">Download Brochure</button>
+        </div>
+        <div class="hero-meta">
+          <span>✔ 1000+ MRT & operational reports</span>
+          <span>✔ Site-to-HO integrated workflows</span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Sample dashboard preview">
+        <div class="hero-card-header">
+          <span>Live Project Snapshot</span>
+          <span>Real-time from site</span>
+        </div>
+        <div class="hero-card-title">Metro Tower – Phase II</div>
+        <div class="kpi-row">
+          <div class="kpi">
+            <div class="kpi-label">Progress</div>
+            <div class="kpi-value">78%</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Cost Variance</div>
+            <div class="kpi-value">+3.2%</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Billing Collected</div>
+            <div class="kpi-value">₹42.6 Cr</div>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <div class="kpi">
+            <div class="kpi-label">Open Snags</div>
+            <div class="kpi-value">14</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Pending Approvals</div>
+            <div class="kpi-value">9</div>
+          </div>
+        </div>
+        <div class="hero-card-footer">
+          <span>Drill down to transaction level →</span>
+          <span>Powered by BuildSuperfast ERP</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- FEATURES OVERVIEW -->
+    <section id="features">
+      <h2>End-to-End ERP for the Construction Operation Lifecycle</h2>
+      <p class="section-lead">
+        BuildSuperfast ERP unifies every business function into a single connected ecosystem, from land bank and tenders
+        to site execution, billing, collections and handover.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Workflow & Approvals Matrix</h3>
+          <p>Automated, customizable workflows for requests, approvals, and notifications across departments.</p>
+          <ul>
+            <li>Email, System Notification, SMS & WhatsApp alerts</li>
+            <li>Multi-level approvals and escalations</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Project Management & Planning</h3>
+          <p>Control project budgets, schedules and progress with integrated project planning tools.</p>
+          <ul>
+            <li>Budgeting, scheduling, WBS/IOW tracking</li>
+            <li>Progress monitoring & milestone management</li>
+            <li>Integration with industry-standard scheduling tools</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Land Development</h3>
+          <p>End-to-end control over land acquisition, documentation and approvals.</p>
+          <ul>
+            <li>Land acquisition & documentation</li>
+            <li>Approval tracking and development progress</li>
+            <li>Cost monitoring and analytics</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Contractor Tendering & Procurement</h3>
+          <p>Transparent, BOQ-based tendering and structured procurement flows.</p>
+          <ul>
+            <li>BOQ-based tendering & rate comparisons</li>
+            <li>Work orders, purchase orders, vendor evaluations</li>
+            <li>Negotiation workflows</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Client Billing & Sales</h3>
+          <p>Streamline billing, collections and customer engagement.</p>
+          <ul>
+            <li>Stage-wise billing & demand letters</li>
+            <li>Collection tracking & agreements</li>
+            <li>Pre-sales & post-sales management, marketing campaigns, leads</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Material Management</h3>
+          <p>Control material movement and consumption across projects.</p>
+          <ul>
+            <li>Indents, purchase, GRN & stock monitoring</li>
+            <li>Site transfers & reconciliation</li>
+            <li>Cost-centre-based consumption tracking with real-time alerts</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Labour & Contract Management</h3>
+          <p>Comprehensive control over labour and contractor operations.</p>
+          <ul>
+            <li>Contractor billing & labour deployment</li>
+            <li>Attendance, wage registers & muster rolls</li>
+            <li>Compliance-driven workflows</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Asset & Property Management</h3>
+          <p>Track assets and properties across their entire lifecycle.</p>
+          <ul>
+            <li>Asset tracking, maintenance & depreciation</li>
+            <li>AMC, property allotment, leasing & renewals</li>
+            <li>Handover and occupancy visibility</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>HRM & Payroll</h3>
+          <p>End-to-end HR and payroll management.</p>
+          <ul>
+            <li>Recruitment & onboarding</li>
+            <li>Attendance, leave & payroll processing</li>
+            <li>Statutory compliance & employee self-service</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>CRM for Developers</h3>
+          <p>Manage the complete customer journey from enquiry to handover.</p>
+          <ul>
+            <li>Pre-sales lead management & campaigns</li>
+            <li>Bookings & agreements</li>
+            <li>Post-sales follow-up & engagement</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Financial Accounts</h3>
+          <p>Tightly integrated accounting for true project profitability.</p>
+          <ul>
+            <li>Receivables, payables & cost centre accounting</li>
+            <li>Cash/Bank, depreciation & financial statements</li>
+            <li>GST compliance & connectivity with external accounting systems</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Office Admin, Vendor & DMS</h3>
+          <p>Support functions that keep your back office running seamlessly.</p>
+          <ul>
+            <li>Office administration, internal communication & tasks</li>
+            <li>Vendor management & analytics</li>
+            <li>Secure DMS with upload, versioning, tagging & auto-expiry reminders</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MIS & DASHBOARDS -->
+    <section id="mis">
+      <div class="two-col">
+        <div>
+          <h2>Advanced MIS & Dashboards</h2>
+          <p class="section-lead">
+            A powerful MIS layer gives management, project heads and finance teams complete visibility into every project,
+            department and cost centre.
+          </p>
+          <ul>
+            <li>Real-time dashboards for all modules</li>
+            <li>Drill-down to transaction level</li>
+            <li>Trend analysis, variance reports and projections</li>
+            <li>Over 1,000 MRT analytical reports</li>
+            <li>Over 1,000 grid-based operational reports with direct Excel and PDF exports</li>
+          </ul>
+        </div>
+        <div>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-label">Analytical MRT Reports</div>
+              <div class="stat-value">1000+ </div>
+              <div class="stat-label">Multi-dimensional performance views</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Operational Reports</div>
+              <div class="stat-value">1000+ </div>
+              <div class="stat-label">Day-to-day control & audit</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Export Options</div>
+              <div class="stat-value">Excel & PDF</div>
+              <div class="stat-label">One-click sharing & documentation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA ENTRY & INTEGRATIONS -->
+    <section>
+      <div class="two-col">
+        <div>
+          <h2>Data Entry Efficiency & Bulk Operations</h2>
+          <p class="section-lead">
+            Designed for large-scale construction operations that demand speed, accuracy and volume handling.
+          </p>
+          <ul>
+            <li>Bulk transaction imports through Excel for high-volume entries</li>
+            <li>Template-based uploads for site updates, material receipts, labour data and billing</li>
+            <li>Smart validation rules and error logs for clean data entry</li>
+            <li>Auto-calculated fields, formula setups and dynamic summaries across modules</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Integrations & Compliance</h2>
+          <p class="section-lead">
+            BuildSuperfast ERP connects your ecosystem end-to-end while ensuring complete transparency and compliance.
+          </p>
+          <ul>
+            <li>Email, WhatsApp, SMS & social media integrations</li>
+            <li>Tally and other accounting systems</li>
+            <li>GST compliance & return-ready reports</li>
+            <li>Vendor portals, client portals & payment gateways</li>
+            <li>Project scheduling tool integrations</li>
+            <li>API connectivity for third-party systems, IoT devices & digital approval apps</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOUD & UX -->
+    <section id="cloud">
+      <div class="two-col">
+        <div>
+          <h2>Cloud-First + Mobile-First Approach</h2>
+          <p class="section-lead">
+            Delivered as a cloud-enabled SaaS solution, BuildSuperfast ERP keeps all your projects connected and always on.
+          </p>
+          <ul>
+            <li>High availability with automatic updates</li>
+            <li>Scalable multi-company, multi-project architecture</li>
+            <li>Secure role-based access</li>
+            <li>Mobile apps for site operations, approvals, material receipts, labour attendance, inspections & document access</li>
+            <li>Real-time data synchronization from remote project locations</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Unmatched User Experience</h2>
+          <p class="section-lead">
+            A clean, intuitive interface optimized for both site engineers and head-office users.
+          </p>
+          <ul>
+            <li>Configurable menus, shortcuts, templates and alerts</li>
+            <li>Rapid navigation, search and powerful filters</li>
+            <li>Personalized dashboards for different roles</li>
+            <li>Consistent user journey across desktop and mobile</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE & WHY -->
+    <section id="why">
+      <div class="two-col">
+        <div>
+          <h2>Built on Modern Architecture</h2>
+          <p class="section-lead">
+            A future-ready platform engineered for scale, security and continuous enhancement.
+          </p>
+          <ul>
+            <li>A secure, modular, service-oriented backend</li>
+            <li>Dynamic API-driven workflows connecting all modules</li>
+            <li>Component-based interactive user interface</li>
+            <li>Optimized data processing for high-volume construction transactions</li>
+            <li>Seamless support for customizations and extensions</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Why BuildSuperfast ERP Stands Out</h2>
+          <ul>
+            <li>40+ years of construction domain expertise</li>
+            <li>Trusted by leading Builders & Contractors</li>
+            <li>Designed specifically for the construction and real estate industry</li>
+            <li>Scalable for both single-site and multi-state enterprises</li>
+            <li>Fast implementation, easy adoption & minimal training overhead</li>
+            <li>Deep functional coverage unmatched in the market</li>
+            <li>Continuous enhancement with new modules, integrations and mobile capabilities</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS & TESTIMONIALS -->
+    <section>
+      <div class="clients">
+        <div>
+          <h2>Our Clients</h2>
+          <p>
+            BuildSuperfast ERP is trusted by progressive builders, developers and contractors operating in residential,
+            commercial, infrastructure and industrial segments.
+          </p>
+        </div>
+        <div class="logo-row">
+          <div class="logo-placeholder">Client Logo 1</div>
+          <div class="logo-placeholder">Client Logo 2</div>
+          <div class="logo-placeholder">Client Logo 3</div>
+          <div class="logo-placeholder">Client Logo 4</div>
+          <div class="logo-placeholder">Client Logo 5</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="testimonials">
+        <div>
+          <h2>Client Testimonials</h2>
+          <p>
+            “BuildSuperfast ERP gave us complete control over our projects, from land acquisition to handover. Our
+            decision-making is now driven by real-time data instead of manual spreadsheets.”
+          </p>
+          <p style="font-size:0.9rem; color:#9ca3af;">— Sample Testimonial, Managing Director, Leading Construction Firm</p>
+        </div>
+        <div>
+          <p style="font-size:0.95rem; color:#9ca3af;">
+            Use this space to showcase quotes from your top customers: builders, developers, contractors and infrastructure
+            firms who rely on BuildSuperfast ERP to manage complex projects, high volumes and tight deadlines.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section>
+      <div class="two-col" style="align-items:center;">
+        <div>
+          <h2>Boost Productivity. Improve Profitability. Deliver Projects On Time.</h2>
+          <p class="section-lead">
+            Experience a smarter way to manage construction projects with a complete ERP system tailored for the
+            construction and real estate industry.
+          </p>
+        </div>
+        <div>
+          <div class="hero-cta" style="justify-content:flex-start;">
+            <button class="btn btn-primary">Book a Demo</button>
+            <button class="btn btn-outline">Talk to Our Team</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year"></span> BuildSuperfast ERP. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="product.html">Product</a>
+      <a href="#">Support</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+</body>
+</html>
